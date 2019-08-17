@@ -1,3 +1,6 @@
+// TEMPLATE AUTHOR: Jadon Wolffs
+// CLONE TEMPLATE with: git clone https://github.com/jadonwolffs/cpp_templates.git
+
 // PRECOMPILER LOGIC
 #ifndef UNIQUE_NAME_OF_PROJ
 #define UNIQUE_NAME_OF_PROJ

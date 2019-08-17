@@ -1,3 +1,6 @@
+// TEMPLATE AUTHOR: Jadon Wolffs
+// CLONE TEMPLATE with: git clone https://github.com/jadonwolffs/cpp_templates.git
+
 // DEFINE EXTERNED VARS
 int global_int;
 // IMPLEMENT CLASS METHODS
