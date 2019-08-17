@@ -3,10 +3,11 @@
 
 # DEFINE VARIABLES
 compiler = g++
-primary = driver # DEFINE DRIVER NAME
-secondary = header # DEFINE HEADER NAME
+primary = driver
+secondary = header
 libraries = # DEFINE LIBRARY LOCATIONS
-stuno = # STUDENT NUMBER (I use as a name for archives)
+# STUDENT NUMBER (I use as a name for archives)
+stuno = 
 sub_files = README.md src/$(primary).cpp src/$(secondary).h src/$(secondary).cpp Makefile # DEFINE FILENAMES TO BE ARCHIVED
 ops = --std=c++11
 
@@ -23,7 +24,7 @@ run: src/$(primary)
 	.\$(primary)
 
 clean:
-	rm -f $(primary)* src/*.o $(stuno).*
+	rm -f $(primary).* src/*.o $(stuno).*
 
 tar: clean
 	tar -cvf $(stuno).tar $(sub_files)
