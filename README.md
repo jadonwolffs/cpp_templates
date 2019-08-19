@@ -6,6 +6,7 @@ Just makes life a little easier, you know? You can just pull this to a folder an
 
 ## How?
 Run `git clone https://github.com/jadonwolffs/cpp_templates.git folder_name` - where `folder_name` is the folder you want to create it in
+
 Then manually delete the `.git` folder in there or change into the directory and run `rm -fr .git*`
 
 You may also want to edit the `.gitignore` to ignore your own project specific files or folders. Check [gitignore.io](https://gitignore.io) for more.
