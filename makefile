@@ -11,7 +11,7 @@ stuno =
 sub_files = README.md src/$(primary).cpp src/$(secondary).h src/$(secondary).cpp Makefile # DEFINE FILENAMES TO BE ARCHIVED
 ops = --std=c++11
 
-src/$(primary): src/$(primary).o src/$(secondary).o
+$(primary): src/$(primary).o src/$(secondary).o
 	$(compiler) -o $(primary) src/$(primary).o src/$(secondary).o $(ops)
 
 src/$(primary).o: src/$(primary).cpp
@@ -20,7 +20,7 @@ src/$(primary).o: src/$(primary).cpp
 src/$(secondary).o: src/$(secondary).cpp
 	$(compiler) $(libraries) -c src/$(secondary).cpp -o src/$(secondary).o $(ops)
 
-run: src/$(primary)
+run: $(primary)
 	.\$(primary)
 
 clean:
